@@ -1,5 +1,6 @@
 # Software Transactional Locks
 
+![Alt text](https://user-images.githubusercontent.com/1574981/41672584-ef9140a4-74c2-11e8-9da2-9ca926f77a53.png "(c) Ashley McNamara")
 [![GoDoc](https://godoc.org/github.com/acronis/stl?status.svg)](https://godoc.org/github.com/acronis/stl)
 [![Build Status](https://travis-ci.org/acronis/stl.svg?branch=master)](https://travis-ci.org/acronis/stl)
 [![Go Report Status](https://goreportcard.com/badge/github.com/acronis/stl)](https://goreportcard.com/report/github.com/acronis/stl)
