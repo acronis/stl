@@ -308,7 +308,7 @@ func TestDiningPhilosophers(t *testing.T) {
 
 	do := func(name string, i int, locker Locker) {
 		// Think for 300 ms.
-		fmt.Printf("%v \t| %s is thinking %dth time\n", time.Now().Sub(start), name, i+1)
+		fmt.Printf("%v \t| %s is thinking %dth time\n", time.Since(start), name, i+1)
 		time.Sleep(time.Millisecond * 300)
 
 		// Wait for lock (starvation duration).
@@ -317,7 +317,7 @@ func TestDiningPhilosophers(t *testing.T) {
 		defer locker.Unlock()
 
 		// Eat for 100ms.
-		fmt.Printf("%v \t| %s is eating %dth time, was starving for %v\n", time.Now().Sub(start), name, i+1, time.Now().Sub(timeStartStaving))
+		fmt.Printf("%v \t| %s is eating %dth time, was starving for %v\n", time.Since(start), name, i+1, time.Since(timeStartStaving))
 		time.Sleep(time.Millisecond * 100)
 	}
 
