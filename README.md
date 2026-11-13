@@ -1,10 +1,8 @@
 # Software Transactional Locks
 
 ![Alt text](https://user-images.githubusercontent.com/1574981/41672584-ef9140a4-74c2-11e8-9da2-9ca926f77a53.png "(c) Ashley McNamara")
-[![GoDoc](https://godoc.org/github.com/acronis/stl?status.svg)](https://godoc.org/github.com/acronis/stl)
-[![Build Status](https://travis-ci.org/acronis/stl.svg?branch=master)](https://travis-ci.org/acronis/stl)
-[![Go Report Status](https://goreportcard.com/badge/github.com/acronis/stl)](https://goreportcard.com/report/github.com/acronis/stl)
-[![Coverage Status](https://coveralls.io/repos/github/acronis/stl/badge.svg?branch=master)](https://coveralls.io/github/acronis/stl?branch=master)
+[![Go Reference](https://pkg.go.dev/badge/github.com/acronis/stl.svg)](https://pkg.go.dev/github.com/acronis/stl)
+[![Build Status](https://github.com/acronis/stl/actions/workflows/go.yml/badge.svg)](https://github.com/acronis/stl/actions/workflows/go.yml)
 
 Package `stl` provides multiple atomic dynamic shared/exclusive locks, based on [Software Transactional Memory](https://en.wikipedia.org/wiki/Software_transactional_memory) (STM) concurrency control mechanism.
 In addition `stl` locks can take `context.Context` that allows to cancel or set a deadline for such locks.

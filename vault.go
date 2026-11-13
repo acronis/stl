@@ -8,7 +8,7 @@ import (
 // NewVault creates an instance of Vault.
 func NewVault() Vault {
 	return &vault{
-		wait: make(chan struct{}, 0),
+		wait: make(chan struct{}),
 		rs:   make(map[string]*resource),
 	}
 }
@@ -96,7 +96,7 @@ func (v *vault) tryLock(tx Tx) <-chan struct{} {
 
 func (v *vault) exposeWait() <-chan struct{} {
 	if v.wait == nil {
-		v.wait = make(chan struct{}, 0)
+		v.wait = make(chan struct{})
 	}
 
 	return v.wait
